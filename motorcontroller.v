@@ -14,7 +14,7 @@ module motorcontroller();
     // output logic [18:0] fl; 
     // output logic [18:0] fr; //big so we can have a sign bit and a useless bit
 
-    logic [15:0] ch [0:12];
+    wire [15:0] ch [0:12];
 
     ppm_decoder decoder(clk, RST, PPM, ch);
 
