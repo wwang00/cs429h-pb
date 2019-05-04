@@ -1,0 +1,5 @@
+module ppm_decoder_test(CLK, SW, LED);
+
+input logic CLK;
+input logic SW ;
+input 

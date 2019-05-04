@@ -1,0 +1,6 @@
+module ppm_decoder(in, ch);
+
+input in;
+output reg [9:0] ch [5:0];
+
+endmodule

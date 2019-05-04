@@ -1,0 +1,1228 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/01/2019 11:45:05"
+
+// 
+// Device: Altera 5CGXFC5C6F27C7 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ppm_decoder (
+	in,
+	ch_0_0,
+	ch_0_1,
+	ch_0_2,
+	ch_0_3,
+	ch_0_4,
+	ch_0_5,
+	ch_0_6,
+	ch_0_7,
+	ch_0_8,
+	ch_0_9,
+	ch_1_0,
+	ch_1_1,
+	ch_1_2,
+	ch_1_3,
+	ch_1_4,
+	ch_1_5,
+	ch_1_6,
+	ch_1_7,
+	ch_1_8,
+	ch_1_9,
+	ch_2_0,
+	ch_2_1,
+	ch_2_2,
+	ch_2_3,
+	ch_2_4,
+	ch_2_5,
+	ch_2_6,
+	ch_2_7,
+	ch_2_8,
+	ch_2_9,
+	ch_3_0,
+	ch_3_1,
+	ch_3_2,
+	ch_3_3,
+	ch_3_4,
+	ch_3_5,
+	ch_3_6,
+	ch_3_7,
+	ch_3_8,
+	ch_3_9,
+	ch_4_0,
+	ch_4_1,
+	ch_4_2,
+	ch_4_3,
+	ch_4_4,
+	ch_4_5,
+	ch_4_6,
+	ch_4_7,
+	ch_4_8,
+	ch_4_9,
+	ch_5_0,
+	ch_5_1,
+	ch_5_2,
+	ch_5_3,
+	ch_5_4,
+	ch_5_5,
+	ch_5_6,
+	ch_5_7,
+	ch_5_8,
+	ch_5_9);
+input 	in;
+output 	ch_0_0;
+output 	ch_0_1;
+output 	ch_0_2;
+output 	ch_0_3;
+output 	ch_0_4;
+output 	ch_0_5;
+output 	ch_0_6;
+output 	ch_0_7;
+output 	ch_0_8;
+output 	ch_0_9;
+output 	ch_1_0;
+output 	ch_1_1;
+output 	ch_1_2;
+output 	ch_1_3;
+output 	ch_1_4;
+output 	ch_1_5;
+output 	ch_1_6;
+output 	ch_1_7;
+output 	ch_1_8;
+output 	ch_1_9;
+output 	ch_2_0;
+output 	ch_2_1;
+output 	ch_2_2;
+output 	ch_2_3;
+output 	ch_2_4;
+output 	ch_2_5;
+output 	ch_2_6;
+output 	ch_2_7;
+output 	ch_2_8;
+output 	ch_2_9;
+output 	ch_3_0;
+output 	ch_3_1;
+output 	ch_3_2;
+output 	ch_3_3;
+output 	ch_3_4;
+output 	ch_3_5;
+output 	ch_3_6;
+output 	ch_3_7;
+output 	ch_3_8;
+output 	ch_3_9;
+output 	ch_4_0;
+output 	ch_4_1;
+output 	ch_4_2;
+output 	ch_4_3;
+output 	ch_4_4;
+output 	ch_4_5;
+output 	ch_4_6;
+output 	ch_4_7;
+output 	ch_4_8;
+output 	ch_4_9;
+output 	ch_5_0;
+output 	ch_5_1;
+output 	ch_5_2;
+output 	ch_5_3;
+output 	ch_5_4;
+output 	ch_5_5;
+output 	ch_5_6;
+output 	ch_5_7;
+output 	ch_5_8;
+output 	ch_5_9;
+
+// Design Ports Information
+// in	=>  Location: PIN_D13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][0]	=>  Location: PIN_AE25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][1]	=>  Location: PIN_AF14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][2]	=>  Location: PIN_G14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][3]	=>  Location: PIN_M26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][4]	=>  Location: PIN_AE14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][5]	=>  Location: PIN_D7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][6]	=>  Location: PIN_T7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][7]	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][8]	=>  Location: PIN_W20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[0][9]	=>  Location: PIN_AA22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][0]	=>  Location: PIN_U25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][1]	=>  Location: PIN_AE24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][2]	=>  Location: PIN_AA26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][3]	=>  Location: PIN_D8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][4]	=>  Location: PIN_C18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][5]	=>  Location: PIN_U24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][6]	=>  Location: PIN_AA6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][7]	=>  Location: PIN_AA14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][8]	=>  Location: PIN_AF13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[1][9]	=>  Location: PIN_N23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][0]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][1]	=>  Location: PIN_H22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][2]	=>  Location: PIN_T8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][3]	=>  Location: PIN_R20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][4]	=>  Location: PIN_AA18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][5]	=>  Location: PIN_AF17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][6]	=>  Location: PIN_W13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][7]	=>  Location: PIN_D18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][8]	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[2][9]	=>  Location: PIN_C19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][0]	=>  Location: PIN_W11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][1]	=>  Location: PIN_M10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][2]	=>  Location: PIN_AD11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][3]	=>  Location: PIN_F23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][4]	=>  Location: PIN_AF7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][5]	=>  Location: PIN_K11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][6]	=>  Location: PIN_Y18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][7]	=>  Location: PIN_AE21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][8]	=>  Location: PIN_AA21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[3][9]	=>  Location: PIN_H9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][0]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][1]	=>  Location: PIN_E9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][2]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][3]	=>  Location: PIN_V12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][4]	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][5]	=>  Location: PIN_AC14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][6]	=>  Location: PIN_K23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][7]	=>  Location: PIN_B20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][8]	=>  Location: PIN_AF16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[4][9]	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][0]	=>  Location: PIN_AB11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][1]	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][2]	=>  Location: PIN_AC13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][3]	=>  Location: PIN_AE13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][4]	=>  Location: PIN_AF24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][5]	=>  Location: PIN_G22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][6]	=>  Location: PIN_J21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][7]	=>  Location: PIN_A23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][8]	=>  Location: PIN_E26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ch[5][9]	=>  Location: PIN_K8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \in~input_o ;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+
+
+// Location: IOOBUF_X62_Y0_N76
+cyclonev_io_obuf \ch[0][0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_0),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][0]~output .bus_hold = "false";
+defparam \ch[0][0]~output .open_drain_output = "false";
+defparam \ch[0][0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X44_Y0_N53
+cyclonev_io_obuf \ch[0][1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_1),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][1]~output .bus_hold = "false";
+defparam \ch[0][1]~output .open_drain_output = "false";
+defparam \ch[0][1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X46_Y61_N19
+cyclonev_io_obuf \ch[0][2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_2),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][2]~output .bus_hold = "false";
+defparam \ch[0][2]~output .open_drain_output = "false";
+defparam \ch[0][2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y37_N22
+cyclonev_io_obuf \ch[0][3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_3),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][3]~output .bus_hold = "false";
+defparam \ch[0][3]~output .open_drain_output = "false";
+defparam \ch[0][3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X44_Y0_N36
+cyclonev_io_obuf \ch[0][4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_4),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][4]~output .bus_hold = "false";
+defparam \ch[0][4]~output .open_drain_output = "false";
+defparam \ch[0][4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X17_Y61_N76
+cyclonev_io_obuf \ch[0][5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_5),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][5]~output .bus_hold = "false";
+defparam \ch[0][5]~output .open_drain_output = "false";
+defparam \ch[0][5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X2_Y0_N59
+cyclonev_io_obuf \ch[0][6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_6),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][6]~output .bus_hold = "false";
+defparam \ch[0][6]~output .open_drain_output = "false";
+defparam \ch[0][6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X19_Y61_N36
+cyclonev_io_obuf \ch[0][7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_7),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][7]~output .bus_hold = "false";
+defparam \ch[0][7]~output .open_drain_output = "false";
+defparam \ch[0][7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y11_N5
+cyclonev_io_obuf \ch[0][8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_8),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][8]~output .bus_hold = "false";
+defparam \ch[0][8]~output .open_drain_output = "false";
+defparam \ch[0][8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y11_N39
+cyclonev_io_obuf \ch[0][9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_0_9),
+	.obar());
+// synopsys translate_off
+defparam \ch[0][9]~output .bus_hold = "false";
+defparam \ch[0][9]~output .open_drain_output = "false";
+defparam \ch[0][9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y27_N39
+cyclonev_io_obuf \ch[1][0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_0),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][0]~output .bus_hold = "false";
+defparam \ch[1][0]~output .open_drain_output = "false";
+defparam \ch[1][0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X61_Y0_N36
+cyclonev_io_obuf \ch[1][1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_1),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][1]~output .bus_hold = "false";
+defparam \ch[1][1]~output .open_drain_output = "false";
+defparam \ch[1][1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y22_N96
+cyclonev_io_obuf \ch[1][2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_2),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][2]~output .bus_hold = "false";
+defparam \ch[1][2]~output .open_drain_output = "false";
+defparam \ch[1][2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X10_Y61_N76
+cyclonev_io_obuf \ch[1][3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_3),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][3]~output .bus_hold = "false";
+defparam \ch[1][3]~output .open_drain_output = "false";
+defparam \ch[1][3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y61_N53
+cyclonev_io_obuf \ch[1][4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_4),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][4]~output .bus_hold = "false";
+defparam \ch[1][4]~output .open_drain_output = "false";
+defparam \ch[1][4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y19_N39
+cyclonev_io_obuf \ch[1][5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_5),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][5]~output .bus_hold = "false";
+defparam \ch[1][5]~output .open_drain_output = "false";
+defparam \ch[1][5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X4_Y0_N36
+cyclonev_io_obuf \ch[1][6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_6),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][6]~output .bus_hold = "false";
+defparam \ch[1][6]~output .open_drain_output = "false";
+defparam \ch[1][6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N59
+cyclonev_io_obuf \ch[1][7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_7),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][7]~output .bus_hold = "false";
+defparam \ch[1][7]~output .open_drain_output = "false";
+defparam \ch[1][7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X42_Y0_N53
+cyclonev_io_obuf \ch[1][8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_8),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][8]~output .bus_hold = "false";
+defparam \ch[1][8]~output .open_drain_output = "false";
+defparam \ch[1][8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y35_N5
+cyclonev_io_obuf \ch[1][9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_1_9),
+	.obar());
+// synopsys translate_off
+defparam \ch[1][9]~output .bus_hold = "false";
+defparam \ch[1][9]~output .open_drain_output = "false";
+defparam \ch[1][9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X40_Y61_N93
+cyclonev_io_obuf \ch[2][0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_0),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][0]~output .bus_hold = "false";
+defparam \ch[2][0]~output .open_drain_output = "false";
+defparam \ch[2][0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y45_N5
+cyclonev_io_obuf \ch[2][1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_1),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][1]~output .bus_hold = "false";
+defparam \ch[2][1]~output .open_drain_output = "false";
+defparam \ch[2][1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X2_Y0_N42
+cyclonev_io_obuf \ch[2][2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_2),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][2]~output .bus_hold = "false";
+defparam \ch[2][2]~output .open_drain_output = "false";
+defparam \ch[2][2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y22_N45
+cyclonev_io_obuf \ch[2][3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_3),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][3]~output .bus_hold = "false";
+defparam \ch[2][3]~output .open_drain_output = "false";
+defparam \ch[2][3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X62_Y0_N59
+cyclonev_io_obuf \ch[2][4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_4),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][4]~output .bus_hold = "false";
+defparam \ch[2][4]~output .open_drain_output = "false";
+defparam \ch[2][4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y0_N2
+cyclonev_io_obuf \ch[2][5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_5),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][5]~output .bus_hold = "false";
+defparam \ch[2][5]~output .open_drain_output = "false";
+defparam \ch[2][5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y0_N19
+cyclonev_io_obuf \ch[2][6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_6),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][6]~output .bus_hold = "false";
+defparam \ch[2][6]~output .open_drain_output = "false";
+defparam \ch[2][6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X55_Y61_N42
+cyclonev_io_obuf \ch[2][7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_7),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][7]~output .bus_hold = "false";
+defparam \ch[2][7]~output .open_drain_output = "false";
+defparam \ch[2][7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y13_N39
+cyclonev_io_obuf \ch[2][8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_8),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][8]~output .bus_hold = "false";
+defparam \ch[2][8]~output .open_drain_output = "false";
+defparam \ch[2][8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y61_N36
+cyclonev_io_obuf \ch[2][9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_2_9),
+	.obar());
+// synopsys translate_off
+defparam \ch[2][9]~output .bus_hold = "false";
+defparam \ch[2][9]~output .open_drain_output = "false";
+defparam \ch[2][9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X10_Y0_N42
+cyclonev_io_obuf \ch[3][0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_0),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][0]~output .bus_hold = "false";
+defparam \ch[3][0]~output .open_drain_output = "false";
+defparam \ch[3][0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X21_Y61_N19
+cyclonev_io_obuf \ch[3][1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_1),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][1]~output .bus_hold = "false";
+defparam \ch[3][1]~output .open_drain_output = "false";
+defparam \ch[3][1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N76
+cyclonev_io_obuf \ch[3][2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_2),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][2]~output .bus_hold = "false";
+defparam \ch[3][2]~output .open_drain_output = "false";
+defparam \ch[3][2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y45_N39
+cyclonev_io_obuf \ch[3][3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_3),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][3]~output .bus_hold = "false";
+defparam \ch[3][3]~output .open_drain_output = "false";
+defparam \ch[3][3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X19_Y0_N36
+cyclonev_io_obuf \ch[3][4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_4),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][4]~output .bus_hold = "false";
+defparam \ch[3][4]~output .open_drain_output = "false";
+defparam \ch[3][4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X50_Y61_N19
+cyclonev_io_obuf \ch[3][5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_5),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][5]~output .bus_hold = "false";
+defparam \ch[3][5]~output .open_drain_output = "false";
+defparam \ch[3][5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X62_Y0_N42
+cyclonev_io_obuf \ch[3][6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_6),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][6]~output .bus_hold = "false";
+defparam \ch[3][6]~output .open_drain_output = "false";
+defparam \ch[3][6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X53_Y0_N53
+cyclonev_io_obuf \ch[3][7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_7),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][7]~output .bus_hold = "false";
+defparam \ch[3][7]~output .open_drain_output = "false";
+defparam \ch[3][7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X66_Y0_N53
+cyclonev_io_obuf \ch[3][8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_8),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][8]~output .bus_hold = "false";
+defparam \ch[3][8]~output .open_drain_output = "false";
+defparam \ch[3][8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X19_Y61_N19
+cyclonev_io_obuf \ch[3][9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_3_9),
+	.obar());
+// synopsys translate_off
+defparam \ch[3][9]~output .bus_hold = "false";
+defparam \ch[3][9]~output .open_drain_output = "false";
+defparam \ch[3][9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X51_Y61_N36
+cyclonev_io_obuf \ch[4][0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_0),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][0]~output .bus_hold = "false";
+defparam \ch[4][0]~output .open_drain_output = "false";
+defparam \ch[4][0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X10_Y61_N93
+cyclonev_io_obuf \ch[4][1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_1),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][1]~output .bus_hold = "false";
+defparam \ch[4][1]~output .open_drain_output = "false";
+defparam \ch[4][1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X36_Y61_N36
+cyclonev_io_obuf \ch[4][2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_2),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][2]~output .bus_hold = "false";
+defparam \ch[4][2]~output .open_drain_output = "false";
+defparam \ch[4][2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X38_Y0_N19
+cyclonev_io_obuf \ch[4][3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_3),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][3]~output .bus_hold = "false";
+defparam \ch[4][3]~output .open_drain_output = "false";
+defparam \ch[4][3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X10_Y61_N42
+cyclonev_io_obuf \ch[4][4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_4),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][4]~output .bus_hold = "false";
+defparam \ch[4][4]~output .open_drain_output = "false";
+defparam \ch[4][4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X40_Y0_N76
+cyclonev_io_obuf \ch[4][5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_5),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][5]~output .bus_hold = "false";
+defparam \ch[4][5]~output .open_drain_output = "false";
+defparam \ch[4][5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y41_N22
+cyclonev_io_obuf \ch[4][6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_6),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][6]~output .bus_hold = "false";
+defparam \ch[4][6]~output .open_drain_output = "false";
+defparam \ch[4][6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X62_Y61_N93
+cyclonev_io_obuf \ch[4][7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_7),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][7]~output .bus_hold = "false";
+defparam \ch[4][7]~output .open_drain_output = "false";
+defparam \ch[4][7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y0_N19
+cyclonev_io_obuf \ch[4][8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_8),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][8]~output .bus_hold = "false";
+defparam \ch[4][8]~output .open_drain_output = "false";
+defparam \ch[4][8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X36_Y0_N36
+cyclonev_io_obuf \ch[4][9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_4_9),
+	.obar());
+// synopsys translate_off
+defparam \ch[4][9]~output .bus_hold = "false";
+defparam \ch[4][9]~output .open_drain_output = "false";
+defparam \ch[4][9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y0_N19
+cyclonev_io_obuf \ch[5][0]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_0),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][0]~output .bus_hold = "false";
+defparam \ch[5][0]~output .open_drain_output = "false";
+defparam \ch[5][0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X40_Y61_N59
+cyclonev_io_obuf \ch[5][1]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_1),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][1]~output .bus_hold = "false";
+defparam \ch[5][1]~output .open_drain_output = "false";
+defparam \ch[5][1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X40_Y0_N93
+cyclonev_io_obuf \ch[5][2]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_2),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][2]~output .bus_hold = "false";
+defparam \ch[5][2]~output .open_drain_output = "false";
+defparam \ch[5][2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X42_Y0_N36
+cyclonev_io_obuf \ch[5][3]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_3),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][3]~output .bus_hold = "false";
+defparam \ch[5][3]~output .open_drain_output = "false";
+defparam \ch[5][3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X62_Y0_N93
+cyclonev_io_obuf \ch[5][4]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_4),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][4]~output .bus_hold = "false";
+defparam \ch[5][4]~output .open_drain_output = "false";
+defparam \ch[5][4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y45_N56
+cyclonev_io_obuf \ch[5][5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_5),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][5]~output .bus_hold = "false";
+defparam \ch[5][5]~output .open_drain_output = "false";
+defparam \ch[5][5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y51_N22
+cyclonev_io_obuf \ch[5][6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_6),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][6]~output .bus_hold = "false";
+defparam \ch[5][6]~output .open_drain_output = "false";
+defparam \ch[5][6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X65_Y61_N36
+cyclonev_io_obuf \ch[5][7]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_7),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][7]~output .bus_hold = "false";
+defparam \ch[5][7]~output .open_drain_output = "false";
+defparam \ch[5][7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X68_Y37_N56
+cyclonev_io_obuf \ch[5][8]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_8),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][8]~output .bus_hold = "false";
+defparam \ch[5][8]~output .open_drain_output = "false";
+defparam \ch[5][8]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X14_Y61_N2
+cyclonev_io_obuf \ch[5][9]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ch_5_9),
+	.obar());
+// synopsys translate_off
+defparam \ch[5][9]~output .bus_hold = "false";
+defparam \ch[5][9]~output .open_drain_output = "false";
+defparam \ch[5][9]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y61_N58
+cyclonev_io_ibuf \in~input (
+	.i(in),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\in~input_o ));
+// synopsys translate_off
+defparam \in~input .bus_hold = "false";
+defparam \in~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X60_Y50_N3
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

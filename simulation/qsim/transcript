@@ -1,0 +1,94 @@
+# do pb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:45:06 on May 01,2019
+# vlog -work work pb.vo 
+# -- Compiling module ppm_decoder
+# 
+# Top level modules:
+# 	ppm_decoder
+# End time: 11:45:06 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:45:06 on May 01,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ppm_decoder_vlg_vec_tst
+# 
+# Top level modules:
+# 	ppm_decoder_vlg_vec_tst
+# End time: 11:45:06 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ppm_decoder_vlg_vec_tst 
+# Start time: 11:45:06 on May 01,2019
+# Loading work.ppm_decoder_vlg_vec_tst
+# Loading work.ppm_decoder
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# ** Warning: (vsim-3017) Waveform.vwf.vt(96): [TFMPC] - Too few port connections. Expected 61, found 1.
+#    Time: 0 ps  Iteration: 0  Instance: /ppm_decoder_vlg_vec_tst/i1 File: pb.vo
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_9'.
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(102)
+#    Time: 1 us  Iteration: 0  Instance: /ppm_decoder_vlg_vec_tst
+# End time: 11:45:06 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 61

@@ -1,0 +1,6 @@
+module pwm_encoder(clk, rst, val, pwm);
+
+input logic clk;
+input logic rst;
+input logic [15:0] val [0:3];
+output logic [3:0] pwm;

@@ -1,0 +1,112 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 11:04:46  May 01, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		pb_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC5C6F27C7
+set_global_assignment -name TOP_LEVEL_ENTITY pwm_encoder_test
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:04:46  MAY 01, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name SYSTEMVERILOG_FILE ppm_decoder.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE ppm_decoder_test.sv
+set_location_assignment PIN_L7 -to LED[15]
+set_location_assignment PIN_K6 -to LED[14]
+set_location_assignment PIN_D8 -to LED[13]
+set_location_assignment PIN_E9 -to LED[12]
+set_location_assignment PIN_A5 -to LED[11]
+set_location_assignment PIN_B6 -to LED[10]
+set_location_assignment PIN_H8 -to LED[9]
+set_location_assignment PIN_H9 -to LED[8]
+set_location_assignment PIN_F7 -to LED[7]
+set_location_assignment PIN_F6 -to LED[6]
+set_location_assignment PIN_G6 -to LED[5]
+set_location_assignment PIN_G7 -to LED[4]
+set_location_assignment PIN_J8 -to LED[3]
+set_location_assignment PIN_J7 -to LED[2]
+set_location_assignment PIN_K10 -to LED[1]
+set_location_assignment PIN_K8 -to LED[0]
+set_location_assignment PIN_J10 -to LED_PPM
+set_location_assignment PIN_D26 -to PPM
+set_location_assignment PIN_W11 -to SW[4]
+set_location_assignment PIN_AC8 -to SW[3]
+set_location_assignment PIN_AD13 -to SW[2]
+set_location_assignment PIN_AE10 -to SW[1]
+set_location_assignment PIN_AC9 -to SW[0]
+set_location_assignment PIN_R20 -to RAW_CLK
+set_global_assignment -name SYSTEMVERILOG_FILE pwm_encoder.sv
+set_location_assignment PIN_P11 -to RST
+set_global_assignment -name SYSTEMVERILOG_FILE pwm_encoder_test.sv
+set_location_assignment PIN_H7 -to LED_PWM
+set_location_assignment PIN_AC22 -to ESC[3]
+set_location_assignment PIN_AC23 -to ESC[2]
+set_location_assignment PIN_AC24 -to ESC[1]
+set_location_assignment PIN_AA22 -to ESC[0]
+set_global_assignment -name SYSTEMVERILOG_FILE pwm_test.sv
+set_location_assignment PIN_Y8 -to ESC
+set_location_assignment PIN_P12 -to KEY1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[15]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[14]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[13]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[12]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[11]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[10]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to LED_PPM
+set_instance_assignment -name IO_STANDARD "2.5 V" -to PPM
+set_global_assignment -name BOARD "Cyclone V GX Starter Kit"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

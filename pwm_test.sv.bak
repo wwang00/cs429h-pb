@@ -1,0 +1,17 @@
+module pwm_test(RAW_CLK, RST, ESC);
+
+input logic RAW_CLK;
+input logic RST;
+output logic [3:0] ESC = 4'b0;
+
+logic clk = 0;
+logic [31:0] clk_ctr = 31'b0;
+
+always @(posedge RAW_CLK) begin
+	if(clk_ctr >= 24) begin
+		clk <= ~clk;
+		clk_ctr <= 31'b0;
+	end else begin
+		clk_ctr <= clk_ctr + 1;
+	end
+end

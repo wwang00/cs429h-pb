@@ -1,0 +1,392 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\Intel\intelFPGA_lite\18.1\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off pb -c pb --vector_source="C:/Intel/intelFPGA_lite/18.1/pb/Waveform.vwf" --testbench_file="C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Wed May 01 11:45:00 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off pb -c pb --vector_source=C:/Intel/intelFPGA_lite/18.1/pb/Waveform.vwf --testbench_file=C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/Waveform.vwf.vt
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/" pb -c pb
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Wed May 01 11:45:03 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/ pb -c pb
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204001): Port "ch[0][0]" is changed into "ch_0_0" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][1]" is changed into "ch_0_1" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][2]" is changed into "ch_0_2" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][3]" is changed into "ch_0_3" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][4]" is changed into "ch_0_4" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][5]" is changed into "ch_0_5" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][6]" is changed into "ch_0_6" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][7]" is changed into "ch_0_7" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][8]" is changed into "ch_0_8" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[0][9]" is changed into "ch_0_9" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][0]" is changed into "ch_1_0" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][1]" is changed into "ch_1_1" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][2]" is changed into "ch_1_2" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][3]" is changed into "ch_1_3" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][4]" is changed into "ch_1_4" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][5]" is changed into "ch_1_5" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][6]" is changed into "ch_1_6" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][7]" is changed into "ch_1_7" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][8]" is changed into "ch_1_8" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[1][9]" is changed into "ch_1_9" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][0]" is changed into "ch_2_0" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][1]" is changed into "ch_2_1" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][2]" is changed into "ch_2_2" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][3]" is changed into "ch_2_3" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][4]" is changed into "ch_2_4" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][5]" is changed into "ch_2_5" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][6]" is changed into "ch_2_6" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][7]" is changed into "ch_2_7" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][8]" is changed into "ch_2_8" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[2][9]" is changed into "ch_2_9" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][0]" is changed into "ch_3_0" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][1]" is changed into "ch_3_1" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][2]" is changed into "ch_3_2" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][3]" is changed into "ch_3_3" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][4]" is changed into "ch_3_4" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][5]" is changed into "ch_3_5" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][6]" is changed into "ch_3_6" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][7]" is changed into "ch_3_7" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][8]" is changed into "ch_3_8" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[3][9]" is changed into "ch_3_9" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][0]" is changed into "ch_4_0" because it's a member of 2-D array port "ch" File: C
+:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][1]" is changed into "ch_4_1" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][2]" is changed into "ch_4_2" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][3]" is changed into "ch_4_3" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][4]" is changed into "ch_4_4" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][5]" is changed into "ch_4_5" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][6]" is changed into "ch_4_6" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][7]" is changed into "ch_4_7" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][8]" is changed into "ch_4_8" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[4][9]" is changed into "ch_4_9" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][0]" is changed into "ch_5_0" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][1]" is changed into "ch_5_1" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][2]" is changed into "ch_5_2" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][3]" is changed into "ch_5_3" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][4]" is changed into "ch_5_4" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][5]" is changed into "ch_5_5" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][6]" is changed into "ch_5_6" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][7]" is changed into "ch_5_7" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][8]" is changed into "ch_5_8" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204001): Port "ch[5][9]" is changed into "ch_5_9" because it's a member of 2-D array port "ch" File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 1
+Info (204019): Generated file pb.vo in folder "C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4734 megabytes
+    Info: Processing ended: Wed May 01 11:45:05 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/pb.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/Intel/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vsim -c -do pb.do
+
+Reading C:/Intel/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do pb.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:45:06 on May 01,2019
+# vlog -work work pb.vo 
+# -- Compiling module ppm_decoder
+
+# 
+# Top level modules:
+# 	ppm_decoder
+# End time: 11:45:06 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:45:06 on May 01,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ppm_decoder_vlg_vec_tst
+
+# 
+# Top level modules:
+# 	ppm_decoder_vlg_vec_tst
+# End time: 11:45:06 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ppm_decoder_vlg_vec_tst 
+# Start time: 11:45:06 on May 01,2019
+# Loading work.ppm_decoder_vlg_vec_tst
+# Loading work.ppm_decoder
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# ** Warning: (vsim-3017) Waveform.vwf.vt(96): [TFMPC] - Too few port connections. Expected 61, found 1.
+#    Time: 0 ps  Iteration: 0  Instance: /ppm_decoder_vlg_vec_tst/i1 File: pb.vo
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_0_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_1_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_2_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_3_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_4_9'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_0'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_1'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_2'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_3'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_4'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_5'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_6'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_7'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_8'.
+# ** Warning: (vsim-3722) Waveform.vwf.vt(96): [TFMPC] - Missing connection for port 'ch_5_9'.
+# after#25
+# ** Note: $finish    : Waveform.vwf.vt(102)
+#    Time: 1 us  Iteration: 0  Instance: /ppm_decoder_vlg_vec_tst
+# End time: 11:45:06 on May 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 61
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Intel/intelFPGA_lite/18.1/pb/Waveform.vwf...
+
+Reading C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/pb.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: ch[5] - signal not found in VCD.
+
+Warning: ch[4] - signal not found in VCD.
+
+Warning: ch[3] - signal not found in VCD.
+
+Warning: ch[2] - signal not found in VCD.
+
+Warning: ch[1] - signal not found in VCD.
+
+Warning: ch[0] - signal not found in VCD.
+
+Warning: ch[0][0] - signal not found in VCD.
+
+Warning: ch[0][1] - signal not found in VCD.
+
+Warning: ch[0][2] - signal not found in VCD.
+
+Warning: ch[0][3] - signal not found in VCD.
+
+Warning: ch[0][4] - signal not found in VCD.
+
+Warning: ch[0][5] - signal not found in VCD.
+
+Warning: ch[0][6] - signal not found in VCD.
+
+Warning: ch[0][7] - signal not found in VCD.
+
+Warning: ch[0][8] - signal not found in VCD.
+
+Warning: ch[0][9] - signal not found in VCD.
+
+Warning: ch[1][0] - signal not found in VCD.
+
+Warning: ch[1][1] - signal not found in VCD.
+
+Warning: ch[1][2] - signal not found in VCD.
+
+Warning: ch[1][3] - signal not found in VCD.
+
+Warning: ch[1][4] - signal not found in VCD.
+
+Warning: ch[1][5] - signal not found in VCD.
+
+Warning: ch[1][6] - signal not found in VCD.
+
+Warning: ch[1][7] - signal not found in VCD.
+
+Warning: ch[1][8] - signal not found in VCD.
+
+Warning: ch[1][9] - signal not found in VCD.
+
+Warning: ch[2][0] - signal not found in VCD.
+
+Warning: ch[2][1] - signal not found in VCD.
+
+Warning: ch[2][2] - signal not found in VCD.
+
+Warning: ch[2][3] - signal not found in VCD.
+
+Warning: ch[2][4] - signal not found in VCD.
+
+Warning: ch[2][5] - signal not found in VCD.
+
+Warning: ch[2][6] - signal not found in VCD.
+
+Warning: ch[2][7] - signal not found in VCD.
+
+Warning: ch[2][8] - signal not found in VCD.
+
+Warning: ch[2][9] - signal not found in VCD.
+
+Warning: ch[3][0] - signal not found in VCD.
+
+Warning: ch[3][1] - signal not found in VCD.
+
+Warning: ch[3][2] - signal not found in VCD.
+
+Warning: ch[3][3] - signal not found in VCD.
+
+Warning: ch[3][4] - signal not found in VCD.
+
+Warning: ch[3][5] - signal not found in VCD.
+
+Warning: ch[3][6] - signal not found in VCD.
+
+Warning: ch[3][7] - signal not found in VCD.
+
+Warning: ch[3][8] - signal not found in VCD.
+
+Warning: ch[3][9] - signal not found in VCD.
+
+Warning: ch[4][0] - signal not found in VCD.
+
+Warning: ch[4][1] - signal not found in VCD.
+
+Warning: ch[4][2] - signal not found in VCD.
+
+Warning: ch[4][3] - signal not found in VCD.
+
+Warning: ch[4][4] - signal not found in VCD.
+
+Warning: ch[4][5] - signal not found in VCD.
+
+Warning: ch[4][6] - signal not found in VCD.
+
+Warning: ch[4][7] - signal not found in VCD.
+
+Warning: ch[4][8] - signal not found in VCD.
+
+Warning: ch[4][9] - signal not found in VCD.
+
+Warning: ch[5][0] - signal not found in VCD.
+
+Warning: ch[5][1] - signal not found in VCD.
+
+Warning: ch[5][2] - signal not found in VCD.
+
+Warning: ch[5][3] - signal not found in VCD.
+
+Warning: ch[5][4] - signal not found in VCD.
+
+Warning: ch[5][5] - signal not found in VCD.
+
+Warning: ch[5][6] - signal not found in VCD.
+
+Warning: ch[5][7] - signal not found in VCD.
+
+Warning: ch[5][8] - signal not found in VCD.
+
+Warning: ch[5][9] - signal not found in VCD.
+
+Writing the resulting VWF to C:/Intel/intelFPGA_lite/18.1/pb/simulation/qsim/pb_20190501114506.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

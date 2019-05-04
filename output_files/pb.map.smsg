@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at ppm_decoder.sv(43): always construct contains both blocking and non-blocking assignments File: C:/Intel/intelFPGA_lite/18.1/pb/ppm_decoder.sv Line: 43
