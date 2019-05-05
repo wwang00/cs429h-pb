@@ -64,10 +64,10 @@ module motorcontroller();
     wire[11:0] motorOutput [3:0];
 
     //cap each thing at 190 and 999
-    assign motorOutput[0] = br < 16'hBE ? 12'hBE : br > 16'h03E7 : br[11:0];
-    assign motorOutput[1] = fr < 16'hBE ? 12'hBE : fr > 16'h03E7 : fr[11:0];
-    assign motorOutput[2] = fl < 16'hBE ? 12'hBE : fl > 16'h03E7 : fl[11:0];
-    assign motorOutput[3] = bl < 16'hBE ? 12'hBE : bl > 16'h03E7 : bl[11:0];
+    assign motorOutput[0] = br < 16'd190 ? 12'd190 : br > 16'd400 : br[11:0];
+    assign motorOutput[1] = fr < 16'd190 ? 12'd190 : fr > 16'd400 : fr[11:0];
+    assign motorOutput[2] = fl < 16'd190 ? 12'd190 : fl > 16'd400 : fl[11:0];
+    assign motorOutput[3] = bl < 16'd190 ? 12'd190 : bl > 16'd400 : bl[11:0];
 
     //clk, reset, val, pwm
     pwm_encoder encoder(clk, RST, motorOutput, pwm);
