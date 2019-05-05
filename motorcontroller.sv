@@ -55,10 +55,10 @@ module motorcontroller();
     wire signed [15:0] yawNet;
 
     //make these boys big so we don't overflow. Negative indicates underflow, so set to 190
-    wire signed [15:0] fl = (throttle +rollNet -pitchNet -yawNet) >> 4;
-    wire signed [15:0] fr = (throttle -rollNet -pitchNet +yawNet) >> 4;
-    wire signed [15:0] bl = (throttle +rollNet +pitchNet +yawNet) >> 4;
-    wire signed [15:0] br = (throttle -rollNet +pitchNet -yawNet) >> 4;
+    wire signed [15:0] fl = (throttle +rollNet -pitchNet -yawNet) >>> 4;
+    wire signed [15:0] fr = (throttle -rollNet -pitchNet +yawNet) >>> 4;
+    wire signed [15:0] bl = (throttle +rollNet +pitchNet +yawNet) >>> 4;
+    wire signed [15:0] br = (throttle -rollNet +pitchNet -yawNet) >>> 4;
 
     //  2   1
     //  3   0
