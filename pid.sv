@@ -3,7 +3,8 @@
 //motor outputs between 0 and 1024
 module pid(input clk, input signed[15:0] p, input signed[15:0] i, input signed [15:0] d, input signed [15:0] diff, output signed[15:0] net);
 
-    parameter decVals = 12;//the number of vals to the right of the decimal
+    //p has 12, diff has
+    parameter decVals = 27;//the number of vals to the right of the decimal
     //need to do floating point. sensval and target can both be signed, or both unsigned
     //p is in terms of 500 * dps
     wire signed [63:0] sum = pterm;

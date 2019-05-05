@@ -29,14 +29,14 @@ module motorcontroller();
 
     parameter FS = 1000;
 
-    wire signed [63:0] yawDiffBig = 500 * gYaw * FS - $signed(lx - 500) * (1 << 15) * YAW_MAX;
-    wire signed [63:0] rollDiffBig = 500 * gRoll * FS - $signed(rx - 500) * (1 << 15) * ROLL_MAX;
-    wire signed [63:0] pitchDiffBig = 500 * gPitch * FS - $signed(ry - 500) * (1 << 15) * PITCH_MAX;
+    wire signed [63:0] yawDiffBig = gYaw * FS - ($signed(lx - 500) << 6) * YAW_MAX;
+    wire signed [63:0] rollDiffBig = gRoll * FS - ($signed(rx - 500) << 6) * ROLL_MAX;
+    wire signed [63:0] pitchDiffBig = gPitch * FS - ($signed(ry - 500) << 6) * PITCH_MAX;
 
     //15 + 9   divide by 2^15, then by 512, to get appx dps
-    wire signed [15:0] yawDiff = yawDiffBig >>> 24; 
-    wire signed [15:0] rollDiff = rollDiffBig >>> 24;
-    wire signed [15:0] pitchDiff = pitchDiffBig >>> 24;
+    wire signed [15:0] yawDiff = yawDiffBig;
+    wire signed [15:0] rollDiff = rollDiffBig;
+    wire signed [15:0] pitchDiff = pitchDiffBig;
 
     //rotors turn in towards center
     pid rollCon(clk, 16'h0100, 0, 0, rollDiff, rollNet);
