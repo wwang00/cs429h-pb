@@ -21,7 +21,7 @@ module motorcontroller();
 
     wire[15:0] throttle = ly * THROTTLE_WEIGHT;
 
-    parameter THROTTLE_WEIGHT = (1 << 4);
+    parameter THROTTLE_WEIGHT = 1;
 
     parameter YAW_MAX = 250;
     parameter ROLL_MAX = 400;
@@ -29,7 +29,6 @@ module motorcontroller();
 
     parameter FS = 1000;
 
-    //are gyro values signed?
     wire signed [63:0] yawDiffBig = 500 * gYaw * FS - $signed(lx - 500) * (1 << 15) * YAW_MAX;
     wire signed [63:0] rollDiffBig = 500 * gRoll * FS - $signed(rx - 500) * (1 << 15) * ROLL_MAX;
     wire signed [63:0] pitchDiffBig = 500 * gPitch * FS - $signed(ry - 500) * (1 << 15) * PITCH_MAX;
@@ -55,10 +54,10 @@ module motorcontroller();
     wire signed [15:0] yawNet;
 
     //make these boys big so we don't overflow. Negative indicates underflow, so set to 190
-    wire signed [15:0] fl = (throttle +rollNet -pitchNet -yawNet) >>> 4;
-    wire signed [15:0] fr = (throttle -rollNet -pitchNet +yawNet) >>> 4;
-    wire signed [15:0] bl = (throttle +rollNet +pitchNet +yawNet) >>> 4;
-    wire signed [15:0] br = (throttle -rollNet +pitchNet -yawNet) >>> 4;
+    wire signed [15:0] fl = (throttle +rollNet -pitchNet -yawNet);
+    wire signed [15:0] fr = (throttle -rollNet -pitchNet +yawNet);
+    wire signed [15:0] bl = (throttle +rollNet +pitchNet +yawNet);
+    wire signed [15:0] br = (throttle -rollNet +pitchNet -yawNet);
 
     //  2   1
     //  3   0
